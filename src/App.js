@@ -45,6 +45,7 @@ function App() {
   //start
   const startGame = useCallback(() => {
     //clear all letters
+    setScore(0);
     clearLetterState();
     const { word, category } = pickWordAndCategory();
     //create arre of letters
